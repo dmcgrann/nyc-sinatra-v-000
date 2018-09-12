@@ -2,7 +2,7 @@
 
 <form action='/figures' method='post'>
   <label><h3>Name</h3></label>
-  <input type='text' name='figure[name]' id='figure_name'><br>
+  <input type='text' name='figure[name]' id='figure_name'></br>
   
   <label><h3>Titles</h3></label>
   <%Title.all.each do |title|%>
@@ -10,7 +10,7 @@
     <input type='checkbox' id="title_<%=title.id%>" name='figure[title_ids][]' value="<%=title.id%>">
   <%end%>
   <label><h3>Create a New Title:</h3></label>
-  <input type='text' name='title[name]' id='new_title'><br>
+  <input type='text' name='title[name]' id='new_title'></br>
   
   <label><h3>Landmarks</h3></label>
   <%Landmark.all.each do |landmark|%>
